@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
+
+:root {
+    --color-principal: #1893d4;
+}
+
+/* ESTILOS GENERALES */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(241, 239, 239);
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ESTILOS HEADER */
+
+.toggle-menu {
+    width: 40px;
+    position: fixed;
+    top: 0.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+@media screen and (min-width: 800px) {
+    .toggle-menu {
+        display: none;
+    }
+}
+
+.main-menu {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-principal);
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+
+.main-menu-show {
+    transform: translateY(0);
+}
+
+@media screen and (min-width: 800px) {
+    .main-menu {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        font-size: 1rem;
+        transform: translateY(0); /* En escritorio el menú se muestra */
+    }
+}
+
+.main-menu-item {
+    padding: 1em;
+}
+
+.main-menu-link {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
+    .main-menu-link {
+        color: #000;
+        font-size: 1.5rem;
+    }
+}
+
+/* ESTILOS MAIN CONTAINER*/
+
+/* ESTILOS INTRODUCTION SECTION */
+.introduction {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.introductionText {
+    font-size: 1.8rem;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.introductionText h1 {
+    margin: -30px 0px;
+}
+
+.textAnimated {
+    color: var(--color-principal);
+}
+
+.introductionImage {
+    height: 50%;
+}
+
+/* ESTILOS ABOUT ME SECTION */
+.aboutMe {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutMeCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMeText {
+    width: 100%;
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMeText p {
+    margin: 10px;
+}
+
+.skillsImg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsImg img {
+    width: 33%;
+}
+
+.aboutMeImgContainer {
+    width: 50%;
+}
+
+.aboutMeImgContainer img {
+    border-radius: 5px;
+    padding: 10px 0px;
+}
