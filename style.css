@@ -5,10 +5,13 @@
 }
 
 /* ESTILOS GENERALES */
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     background-color: rgb(241, 239, 239);
     font-family: "Poppins", sans-serif;
 }
@@ -148,6 +151,7 @@ img {
 
 .aboutMeText p {
     margin: 10px;
+    font-size: 1.3rem;
 }
 
 .skillsImg {
@@ -197,4 +201,25 @@ img {
 .projectCardText {
     width: 90%;
     padding: 10px;
+}
+
+/* STYLES FOOTER */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(218, 218, 218);
+    font-weight: 600;
+}
+
+.footerImg {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerImg img {
+    width: 3rem;
 }
