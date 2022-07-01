@@ -32,7 +32,7 @@ img {
     z-index: 2;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     .toggle-menu {
         display: none;
     }
@@ -58,7 +58,7 @@ img {
     transform: translateY(0);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     .main-menu {
         position: static;
         flex-direction: row;
@@ -79,7 +79,7 @@ img {
     text-decoration: none;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     .main-menu-link {
         color: #000;
         font-size: 1.5rem;
@@ -125,6 +125,29 @@ img {
     height: 50%;
     width: 80%;
 }
+
+@media screen and (min-width: 1001px) {
+    .introduction {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .introductionText {
+        font-size: 2rem;
+        width: 45%;
+        align-items: center;
+    }
+    
+    .textAnimatedContainer {
+        width: 100%;
+        height: initial;
+    }
+
+    .introductionImage {
+        width: 55%;
+    }
+}
+
 
 /* ESTILOS ABOUT ME SECTION */
 .aboutMe {
@@ -173,6 +196,62 @@ img {
     border-radius: 5px;
     padding: 10px 0px;
 }
+
+@media screen and (min-width: 1001px) {
+    .aboutMe {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .aboutMeCard {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .aboutMeText {
+        width: 50%;
+        order: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .aboutMeText p {
+        margin: 10px;
+        font-size: 1.3rem;
+    }
+    
+    .skillsImg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .skillsImg img {
+        width: 16.6%;
+    }
+    
+    .aboutMeImgContainer {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .aboutMeImgContainer img {
+        margin: auto;
+        width: 70%;
+        border-radius: 30px;
+        padding: 10px 0px;
+    }
+}
+
 
 /* STYLES PROJECTS SECTION */
 .projects {
@@ -223,3 +302,5 @@ img {
 .footerImg img {
     width: 3rem;
 }
+
+

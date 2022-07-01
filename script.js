@@ -1,6 +1,7 @@
+"use strict";
+
 const toggleMenuElement = document.getElementById("toggle-menu");
 const mainMenuElement = document.getElementById("main-menu");
-//const mainMenu = document.getElementsByClassName("main-menu-link");
 
 toggleMenuElement.addEventListener("click", () => {
   mainMenuElement.classList.toggle("main-menu-show");
