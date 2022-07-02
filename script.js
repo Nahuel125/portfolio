@@ -7,13 +7,6 @@ toggleMenuElement.addEventListener("click", () => {
   mainMenuElement.classList.toggle("main-menu-show");
 });
 
-/*Funciona peero es rara. 
-for (let i = 0; i < mainMenuLink.length; i++) {
-  mainMenuLink[i].addEventListener("click", function () {
-    mainMenuElement.classList.toggle("main-menu-show");
-  });
-} */
-
 mainMenuElement.addEventListener("click", () => {
   mainMenuElement.classList.remove("main-menu-show");
 });

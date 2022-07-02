@@ -170,11 +170,16 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1em;
 }
 
 .aboutMeText p {
     margin: 10px;
     font-size: 1.3rem;
+}
+
+.principalText {
+    line-height: 1.2em;
 }
 
 .skillsImg {
@@ -201,6 +206,7 @@ img {
     .aboutMe {
         width: 100%;
         height: 100%;
+        padding: 3em;
     }
     
     .aboutMeCard {
@@ -225,7 +231,7 @@ img {
         margin: 10px;
         font-size: 1.3rem;
     }
-    
+
     .skillsImg {
         width: 100%;
         display: flex;
@@ -238,7 +244,7 @@ img {
     }
     
     .aboutMeImgContainer {
-        width: 40%;
+        width: 35%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -255,6 +261,14 @@ img {
 
 /* STYLES PROJECTS SECTION */
 .projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerCards {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -280,6 +294,42 @@ img {
 .projectCardText {
     width: 90%;
     padding: 10px;
+}
+
+@media screen and (min-width: 1001px) {
+    .projects {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .containerCards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        column-gap: 10%;
+    }
+    
+    .projectCard {
+        width: 100%;
+        margin: 20px 0;
+        border: 1px solid black;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
+    }
+
+    .projectCard img {
+        width: 60%;
+    }
 }
 
 /* STYLES FOOTER */
