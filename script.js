@@ -13,8 +13,8 @@ mainMenuElement.addEventListener("click", () => {
 
 const typed = new Typed(".typed", {
   strings: [
-    "<i class= 'textAnimated' >Nahuel Martinez</i>",
-    "<i class='textAnimated'>Desarrollador Web</i>",
+    "<i class= 'textAnimated' >Nahuel<br> Martinez</i>",
+    "<i class='textAnimated'>Desarrollador<br> Web</i>",
   ],
   typeSpeed: 75,
   startDelay: 600,
